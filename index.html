@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="simon.css">
+<audio id="sound1" src="audio/simonSound1.mp3"></audio>
+<audio id="sound2" src="audio/simonSound2.mp3"></audio>
+<audio id="sound3" src="audio/simonSound3.mp3"></audio>
+<audio id="sound4" src="audio/simonSound4.mp3"></audio>
+</head>
+<body>
+    <div class="outer-circle">
+        <div class="part top-left"></div>
+        <div class="part top-right"></div>
+        <div class="part bottom-left"></div>
+        <div class="part bottom-right"></div>
+        <div class="inner-circle">
+            <div id="title">SIMON</div>
+        </div>
+    </div>
+    <div class="switches">
+        <input type="checkbox" class="toggle" id="on">
+        <button class="button" id="start">START</button>
+        <input type="checkbox" class="toggle" id="strict">
+    </div>
+    <div class="text1">
+        <span>POWER</span>
+        <span>STRICT</span>
+        
+    </div>
+    <div id="turn">0</div>
+    <div class="text2">
+        SCORE
+    </div>
+    <div class="instructions">
+        <h3>INSTRUCTIONS</h3>
+        <p><ul class="list">
+            <li>click the power button to turn on.</li>
+            <li>click the start button to start the game</li>
+            <li>in strict mode the score is reset back to 0</li>
+        </ul></p>
+        <p class="para">In this game you have to repeat the exact same pattern that <br> computer will make using these 4 colours.</p>
+    </div> 
+<script src="simon.js"></script>
+</body>
+</html>
