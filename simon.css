@@ -1,146 +1,184 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.outer-circle{
-    width: 600px;
-    height: 600px;
-    background-color: gray;
-    border-radius: 50%;
-    position: relative;
-    
-    border-width: 10px;
-    margin: auto;
-    margin-top: 80px;
-   
-}
-.part{
-    width:250px;
-    height: 250px;
-    position: absolute;
-    
-    box-sizing: border-box;
-    
-    box-shadow: 8px 8px 15px 5px;
-    
-}
-.top-left{
-    border-radius: 300px 0 0 0;
-    background-image: linear-gradient(rgb(83,170,82),rgb(48, 135, 48));
-     top: 30px;
-    left: 30px;
-    box-shadow: 8px 8px 15px 5px rgb(27, 73, 27) ;
-}
-.top-right{
-    border-radius: 0 300px 0 0;
-    background-image: linear-gradient( rgb(130,69,69),rgb(150,67,66));
-    left: 53%;
-    top: 30px;
-    box-shadow: 8px 8px 15px 5px rgb(60, 27, 27) ;
+.outer-circle {
+  width: 600px;
+  height: 600px;
+  background-color: gray;
+  border-radius: 50%;
+  position: relative;
 
+  border-width: 10px;
+  margin: auto;
+  margin-top: 80px;
 }
-.bottom-left{
-    border-radius: 0 0 0px 250px;
-    background-image: linear-gradient( rgb(206,206,85),rgb(167,166,85));
-    top: 53%;
-    left: 30px;
-    box-shadow: 8px 8px 15px 5px rgb(67, 66, 34) ;
-    
+.part {
+  width: 250px;
+  height: 250px;
+  position: absolute;
 
+  box-sizing: border-box;
+
+  box-shadow: 8px 8px 15px 5px;
 }
-.bottom-right{
-    border-radius: 0 0 250px 0;
-    background-image: linear-gradient( rgb(26,56,148),rgb(52,73,134));
-    top: 53%;
-    left: 53%;
-    box-shadow: 8px 8px 15px 5px rgb(11, 24, 67) ;
+.top-left {
+  border-radius: 300px 0 0 0;
+  background-image: linear-gradient(rgb(83, 170, 82), rgb(48, 135, 48));
+  top: 30px;
+  left: 30px;
+  box-shadow: 8px 8px 15px 5px rgb(27, 73, 27);
+}
+.top-right {
+  border-radius: 0 300px 0 0;
+  background-image: linear-gradient(rgb(130, 69, 69), rgb(150, 67, 66));
+  left: 53%;
+  top: 30px;
+  box-shadow: 8px 8px 15px 5px rgb(60, 27, 27);
+}
+.bottom-left {
+  border-radius: 0 0 0px 250px;
+  background-image: linear-gradient(rgb(206, 206, 85), rgb(167, 166, 85));
+  top: 53%;
+  left: 30px;
+  box-shadow: 8px 8px 15px 5px rgb(67, 66, 34);
+}
+.bottom-right {
+  border-radius: 0 0 250px 0;
+  background-image: linear-gradient(rgb(26, 56, 148), rgb(52, 73, 134));
+  top: 53%;
+  left: 53%;
+  box-shadow: 8px 8px 15px 5px rgb(11, 24, 67);
 }
 
+.inner-circle {
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border-radius: 50%;
 
+  box-shadow: 0px 0px 35px 5px;
+}
+#title {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  font-size: 45px;
+  font-family: "Merienda", cursive;
+  font-weight: 900;
+  color: rgb(171, 169, 169);
+}
 
-.inner-circle{
-    height: 300px;
-    width: 300px;
-    background-color: gray ;
+.switches {
+  position: absolute;
+  font-family: "Merienda", cursive;
+  margin-top: 20px;
+  margin-left: 40px;
+
+  width: 200px;
+  height: 50px;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text2 {
+  position: absolute;
+  font-family: "Merienda", cursive;
+  color: azure;
+  top: 40px;
+  right: 100px;
+  font-size: 30px;
+}
+.text1 {
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 30px;
+  font-family: "Merienda", cursive;
+}
+.text1 span:last-child {
+  padding-left: 120px;
+}
+
+#start {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: "Merienda", cursive;
+}
+
+#turn {
+  height: 40px;
+  width: 70px;
+
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  border-radius: 10px;
+  color: aquamarine;
+  font-size: 50px;
+}
+.toggle {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.instructions {
+  color: azure;
+  position: absolute;
+
+  top: 200px;
+  font-size: 15px;
+  font-family: "Merienda", cursive;
+}
+
+@media screen and (max-width: 830px) {
+  .outer-circle {
+    width: 500px;
+    height: 500px;
+  }
+  .part {
+    width: 200px;
+    height: 200px;
+  }
+  .inner-circle {
     position: absolute;
     top: 25%;
     left: 25%;
-    border-radius: 50%;
-    
-    box-shadow: 0px 0px 35px 5px  ;
-}
-#title{
-    position: absolute;
-    top: 120px;
-    left:70px;
-    font-size: 45px;
-    font-family: 'Merienda', cursive;
-    font-weight: 900;
-    color: rgb(171, 169, 169);
-}
-
-.switches{
-    position: absolute;
-    font-family: 'Merienda', cursive;
-    margin-top: 20px;
-    margin-left: 40px;
-   
-    width: 200px;
-    height: 50px;
-    top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.text2{
-    position: absolute;
-    font-family: 'Merienda', cursive;
-    color: azure;
-    top: 40px;
-    right: 100px;
-    font-size: 30px;
-}
-.text1{
-    position: absolute;
-    color: white;
-    top: 20px;
-    left: 30px;
-    font-family: 'Merienda', cursive;
-}
-.text1 span:last-child {
-    padding-left: 120px;
+    width: 250px;
+    height: 250px;
   }
-
-#start{
-    width: 80px;
-    height: 40px;
-    border-radius: 10px;
-    font-family: 'Merienda', cursive;
-}  
-
-#turn{
-    height: 40px;
-    width: 70px;
- 
+  #title {
+    font-size: 40px;
+    top: 100px;
+    left: 55px;
+  }
+  .instructions {
     position: absolute;
-    top: 80px;
-    right: 100px;
-    border-radius: 10px;
-    color: aquamarine;
-    font-size: 50px;
-
+    top: 550px;
+  }
 }
-.toggle{
-    width: 25px;
-    height: 25px;
-    margin-top: 10px;
-}
-
-.instructions{
-    color: azure;
+@media screen and (max-width: 435px) {
+  .text2 {
     position: absolute;
-    top: 200px;
-    font-size: 15px;
-    font-family: 'Merienda', cursive;;
-    
+    left: 300px;
+    top: 20px;
+  }
+  #turn {
+    position: absolute;
+    left: 330px;
+    top: 60px;
+  }
+  .outer-circle {
+    top: 100px;
+  }
+  .instructions {
+    position: absolute;
+    top: 650px;
+  }
 }
